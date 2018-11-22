@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StockManager">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="Button"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#B2CCFF"
+            android:layout_marginTop="20dp"
+            android:text="Save"
+            android:onClick="btnSaveStockData"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/table_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/storeNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="StoreName"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/stockList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="StockList"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/itemID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B2CCFF"
+                    android:text="ProductID"
+                    android:textColor="#D8D8D8" />
+
+                <TextView
+                    android:id="@+id/currentStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#466093"
+                    android:text="CurrentStock"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/salesPerDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#466093"
+                    android:text="SalesPerDay"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/profitCal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#466093"
+                    android:text="Profit"
+                    android:textColor="#FFFFFF" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_layout_row_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/IDno1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="100001"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Stockno1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="000"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/SPDno1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Profitno1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="0000/0000"
+                    android:textSize="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_layout_row_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/IDno2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="100002"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Stockno2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="000"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/SPDno2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Profitno2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="0000/0000"
+                    android:textSize="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_layout_row_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/IDno3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="100003"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Stockno3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="000"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/SPDno3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Profitno3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="0000/0000"
+                    android:textSize="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_layout_row_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/IDno4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="100004"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Stockno4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="000"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/SPDno4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Profitno4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="0000/0000"
+                    android:textSize="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_layout_row_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/IDno5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="100005"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Stockno5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="000"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/SPDno5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Profitno5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="0000/0000"
+                    android:textSize="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_layout_row_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/IDno6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="100006"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Stockno6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="000"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/SPDno6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Profitno6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="0000/0000"
+                    android:textSize="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_layout_row_7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/IDno7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="100007"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Stockno7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="000"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/SPDno7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Profitno7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="0000/0000"
+                    android:textSize="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_layout_row_8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/IDno8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="100008"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Stockno8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="000"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/SPDno8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Profitno8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="0000/0000"
+                    android:textSize="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_layout_row_9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/IDno9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="100009"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Stockno9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="000"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/SPDno9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Profitno9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="0000/0000"
+                    android:textSize="10dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_layout_row_10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/IDno10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="100010"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Stockno10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="000"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/SPDno10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="00"
+                    android:textSize="10dp" />
+
+                <EditText
+                    android:id="@+id/Profitno10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:text="0000/0000"
+                    android:textSize="10dp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/blank1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="2"
+            android:background="#B2CCFF"
+            android:text="Button"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/scanQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="#B2CCFF"
+            android:text="StockQR"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/blank2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="2"
+            android:text="Button"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
